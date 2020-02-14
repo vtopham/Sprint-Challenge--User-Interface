@@ -250,6 +250,10 @@ footer nav a {
     border-radius: 5px;
 }
 
+.about-option-container button:hover {
+    animation-name: learn-more-button-flare;
+    animation-duration: 30s;
+}
 .about-option-container h2{
     margin-bottom: 0px;
 }
@@ -260,6 +264,25 @@ footer nav a {
 .work-together {
     margin: 20px;
 }
+
+
+/* -----animations-------- */
+
+
+/* an animation that makes the button eventually take over the screen */
+@keyframes learn-more-button-flare {
+    from {
+        width: 30%;
+        height: 25px;
+    }
+
+    to {
+        width: 100%;
+        height: 100px;
+        background:red;
+    }
+}
+
 
 /* * {
     border: 1px solid grey;
