@@ -18,14 +18,14 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer,  hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -144,3 +144,42 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* -------header styling--------- */
+
+.header {
+    width: 800px;
+    margin: 0 auto;
+
+    margin-bottom: 20px;
+}
+
+
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 10px;
+
+    margin-bottom: 30px;
+}
+
+.header-links {
+    width: 643px;
+
+    display:flex;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #7d7d7d;
+    font-size: .75em;
+}
+
+
+/* * {
+    border: 1px solid grey;
+} */
