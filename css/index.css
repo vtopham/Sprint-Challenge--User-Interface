@@ -95,23 +95,7 @@ p {
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* box stuff goes here */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -155,7 +139,6 @@ footer nav a {
 }
 
 
-
 .header nav {
     display: flex;
     justify-content: space-between;
@@ -178,6 +161,61 @@ footer nav a {
     color: #7d7d7d;
     font-size: .75em;
 }
+
+
+
+/* ---------box styling------------ */
+
+/* BOX STUFF  */
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle-content .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    /* background: black; */
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1 {
+    background: teal;
+} 
+#box2{
+    background: gold
+}
+#box3{
+    background: cadetblue
+}
+#box4{
+    background: coral
+}
+#box5{
+    background: crimson
+}
+#box6{
+    background: forestgreen
+}
+#box7{
+    background: darkorchid
+}
+#box8{
+    background: hotpink
+}
+#box9{
+    background: indigo
+}
+#box10{
+    background: dodgerblue
+}
+
 
 
 /* * {
