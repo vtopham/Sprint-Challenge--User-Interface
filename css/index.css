@@ -18,14 +18,14 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer,  hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -95,23 +95,7 @@ p {
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* box stuff goes here */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -144,3 +128,193 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* -------header styling--------- */
+
+.header {
+    width: 800px;
+    margin: 0 auto;
+
+    margin-bottom: 20px;
+}
+
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 10px;
+
+    margin-bottom: 30px;
+}
+
+.header-links {
+    width: 643px;
+
+    display:flex;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #7d7d7d;
+    font-size: .75em;
+}
+
+
+
+/* ---------box styling------------ */
+
+/* BOX STUFF  */
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle-content .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    /* background: black; */
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1 {
+    background: teal;
+} 
+#box2{
+    background: gold
+}
+#box3{
+    background: cadetblue
+}
+#box4{
+    background: coral
+}
+#box5{
+    background: crimson
+}
+#box6{
+    background: forestgreen
+}
+#box7{
+    background: darkorchid
+}
+#box8{
+    background: hotpink
+}
+#box9{
+    background: indigo
+}
+#box10{
+    background: dodgerblue
+}
+
+/* -----about page styling-------- */
+
+.about-page-blurb {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+}
+
+.group-of-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.about-option-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 20px 0px;
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
+
+    width: 46%;
+    height: 425px;
+}
+
+.about-option-container button {
+    width: 30%;
+    height: 25px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.about-option-container button:hover {
+    animation-name: learn-more-button-flare;
+    animation-duration: 30s;
+}
+.about-option-container h2{
+    margin-bottom: 0px;
+}
+
+
+/* -------work together blurb----------- */
+
+.work-together {
+    margin: 20px;
+}
+
+
+/* -----animations-------- */
+
+
+/* an animation that makes the button eventually take over the screen */
+@keyframes learn-more-button-flare {
+    from {
+        width: 30%;
+        height: 25px;
+    }
+
+    to {
+        width: 100%;
+        height: 100px;
+        background:red;
+    }
+}
+
+
+/* ----contact page styling------ */
+
+.contact-blurb {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    width: 800px;
+    margin: 0 auto;
+    padding: 40px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-group {
+    margin: 20px 0px;
+    line-height: 1.5;
+}
+
+.contact-form button {
+    width: 150px;
+    height: 50px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    
+    margin: 30px 0px;
+}
+/* * {
+    border: 1px solid grey;
+} */
