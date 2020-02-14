@@ -216,7 +216,50 @@ footer nav a {
     background: dodgerblue
 }
 
+/* -----about page styling-------- */
 
+.about-page-blurb {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+}
+
+.group-of-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.about-option-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 20px 0px;
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
+
+    width: 46%;
+    height: 425px;
+}
+
+.about-option-container button {
+    width: 30%;
+    height: 25px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.about-option-container h2{
+    margin-bottom: 0px;
+}
+
+
+/* -------work together blurb----------- */
+
+.work-together {
+    margin: 20px;
+}
 
 /* * {
     border: 1px solid grey;
